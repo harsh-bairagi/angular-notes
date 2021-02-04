@@ -2,8 +2,9 @@
   "name": "notes",
   "version": "0.0.0",
   "scripts": {
+    "heroku-postbuild": "ng build --prod",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -11,11 +12,11 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "^11.1.2",
+    "@angular/compiler-cli": "^11.1.2",
     "@angular/animations": "~11.1.2",
-    "@angular/cli": "~11.1.2",
     "@angular/common": "~11.1.2",
     "@angular/compiler": "~11.1.2",
-    "@angular/compiler-cli": "~11.1.2",
     "@angular/core": "~11.1.2",
     "@angular/forms": "~11.1.2",
     "@angular/platform-browser": "~11.1.2",
@@ -26,10 +27,13 @@
     "path": "^0.12.7",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "typescript": "~4.0.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1101.2",
+    "@angular/cli": "^11.1.2",
+    "@angular/compiler-cli": "^11.1.2",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
@@ -46,7 +50,7 @@
     "typescript": "~4.0.2"
   },
   "engines": {
-    "node": "12.19.0",
-    "npm": "7.5.2"
+    "node": "12.20.1",
+    "npm": "6.14.11"
   }
 }
